@@ -10,12 +10,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <!-- Scripts. -->
-    <script src="~/Scripts/Home/index.js"></script>
+    <script src="~/Scripts/Shared/jquery-2.1.3.min.js"></script>
 </head>
 <body>
     <div> 
-        <input type="text" />
-        <input type="text" />
+        <input id="txtNumero" type="text" />
+        <input id="txtLetra" type="text" />
     </div>
+
+    <script src="~/Scripts/Home/index.js"></script>
+    <!-- Sección de datos. -->
+    <div id="ConvertirNumerosALetras" data-url="@Url.Action("ConvertirNumerosALetras", "Home")"></div>
+
 </body>
 </html>

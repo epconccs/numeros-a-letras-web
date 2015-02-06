@@ -11,7 +11,7 @@ namespace NumerosALetras.Classes
         /// </summary>
         /// <param name="numero">Número a convertir.</param>
         /// <returns>Número en formato de texto.</returns>
-        public string ConvertirNumerosALetras(string numero)
+        public static string ConvertirNumerosALetras(string numero)
         {
             string res, dec = "";
             Int64 entero;
@@ -44,7 +44,7 @@ namespace NumerosALetras.Classes
         /// </summary>
         /// <param name="value">Valor a convertir.</param>
         /// <returns>Valor en formato de texto.</returns>
-        private string CovertirValor(double value)
+        private static string CovertirValor(double value)
         {
             string resultado = "";
             value = Math.Truncate(value);

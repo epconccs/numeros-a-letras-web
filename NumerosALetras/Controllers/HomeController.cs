@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NumerosALetras.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,19 @@ namespace NumerosALetras.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        public string ConvertirNumerosALetras(string numero)
+        {
+            try
+            {
+                numero = ClsNumerosALetras.ConvertirNumerosALetras(numero);
+                return numero;
+            }
+            catch (Exception)
+            {
+                return "FUERA DE RANGO.";
+            }
         }
     }
 }
