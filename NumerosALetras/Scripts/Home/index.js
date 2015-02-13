@@ -5,7 +5,11 @@ $('#txtNumero').keyup(function () {
         url: $('#ConvertirNumerosALetras').attr('data-url'),
         data: { numero : $(this).val() },
         success: function (data) {
-            $('#lblLetra').html(data);
+            if (data !== '') {
+                $('#lblLetra').html(data);
+            } else {
+                $('#lblLetra').html('Letras');
+            }
         }
     });
 }); 

@@ -17,15 +17,8 @@ namespace NumerosALetras.Controllers
 
         public string ConvertirNumerosALetras(string numero)
         {
-            try
-            {
-                numero = ClsNumerosALetras.ConvertirNumerosALetras(numero);
-                return numero;
-            }
-            catch (Exception)
-            {
-                return "FUERA DE RANGO.";
-            }
+            numero = ClsNumerosALetras.ConvertirNumerosALetras(numero);
+            return numero;
         }
     }
 }

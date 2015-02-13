@@ -13,30 +13,42 @@ namespace NumerosALetras.Classes
         /// <returns>Número en formato de texto.</returns>
         public static string ConvertirNumerosALetras(string numero)
         {
+            // Variables
             string res, dec = "";
             Int64 entero;
             int decimales;
             double nro;
-            // Tratar de convertir cadena a número.
             try
             {
-                nro = Convert.ToDouble(numero);
+                // Validar vacíos.
+                if (string.IsNullOrEmpty(numero))
+                {
+                    return "";
+                }
+                // Validar longitud (Double 16).
+                if (numero.Split('.')[0].Length > 16)
+                {
+                    return "Número fuera de rango.";
+                }              
+                // Tratar de convertir cadena a número.
+                nro = Double.Parse(numero);
+                // Obtener la parte entera y decimal.
+                entero = Convert.ToInt64(Math.Truncate(nro));
+                decimales = Convert.ToInt32(Math.Round((nro - entero) * 100, 2));
+                // Convertir parte decimal.
+                if (decimales > 0)
+                {
+                    dec = " CON " + decimales.ToString() + "/100";
+                }
+                // Convertir parte entera y unirla con la parte decimal.
+                res = CovertirValor(Convert.ToDouble(entero)) + dec;
+
+                return res;
             }
             catch
             {
-                return "";
+                return "No es un número válido.";
             }
-            // Obtener la parte entera y decimal.
-            entero = Convert.ToInt64(Math.Truncate(nro));
-            decimales = Convert.ToInt32(Math.Round((nro - entero) * 100, 2));
-            // Convertir parte decimal.
-            if (decimales > 0)
-            {
-                dec = " CON " + decimales.ToString() + "/100";
-            }
-            // Convertir parte entera y unirla con la parte decimal.
-            res = CovertirValor(Convert.ToDouble(entero)) + dec;
-            return res;
         }
 
         /// <summary>
@@ -52,7 +64,8 @@ namespace NumerosALetras.Classes
             else if (value == 1) resultado = "UNO";
             else if (value == 2) resultado = "DOS";
             else if (value == 3) resultado = "TRES";
-            else if (value == 4) resultado = "CUATRO";
+            else if (value == 4)
+                resultado = "CUATRO";
             else if (value == 5) resultado = "CINCO";
             else if (value == 6) resultado = "SEIS";
             else if (value == 7) resultado = "SIETE";
@@ -60,7 +73,8 @@ namespace NumerosALetras.Classes
             else if (value == 9) resultado = "NUEVE";
             else if (value == 10) resultado = "DIEZ";
             else if (value == 11) resultado = "ONCE";
-            else if (value == 12) resultado = "DOCE";
+            else if (value == 12)
+                resultado = "DOCE";
             else if (value == 13) resultado = "TRECE";
             else if (value == 14) resultado = "CATORCE";
             else if (value == 15) resultado = "QUINCE";
