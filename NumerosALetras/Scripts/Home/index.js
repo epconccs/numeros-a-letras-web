@@ -5,7 +5,7 @@ $('#txtNumero').keyup(function () {
         url: $('#ConvertirNumerosALetras').attr('data-url'),
         data: { numero : $(this).val() },
         success: function (data) {
-            $('#txtLetra').val(data)
+            $('#lblLetra').html(data);
         }
     });
 }); 

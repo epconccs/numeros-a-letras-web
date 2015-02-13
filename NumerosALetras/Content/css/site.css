@@ -1,0 +1,55 @@
+﻿.fondoPrincipal {
+    background-image: url("../images/pat_verde.png")
+}
+input {
+  display: block;
+  width: 800px;
+  font-size: 34px;
+  line-height: 44px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+  padding: 5px 0;
+  border-radius: 0;
+  font-family:Ubuntu;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  color: #f37b7d;
+}
+input:focus {
+  border-bottom-color: #000;
+  outline: none;
+  color: #f37b7d;
+}
+#logo-container img {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    display: block;
+    font-family: Ubuntu;
+    font-size: 34px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align:center;
+    color: #f37b7d;
+}
+#controles{
+    padding-top:50px;
+}
+#footer {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #83c998;
+    opacity: 0.9;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    box-shadow: -10px -10px -5px #000;
+}
+
+
