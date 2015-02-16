@@ -47,7 +47,7 @@ namespace NumerosALetras.Classes
             }
             catch
             {
-                return "No es un número válido.";
+                return "No es un número.";
             }
         }
 
