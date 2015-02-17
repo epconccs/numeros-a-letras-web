@@ -46,22 +46,22 @@ namespace NumerosALetras.Classes
                 // Acentos.
                 if (res.IndexOf("DIECISEIS") != -1)
                 {
-                    res.Replace("DIECISEIS", "DIECISÉIS");
+                    res = res.Replace("DIECISEIS", "DIECISÉIS");
                 }
                 // Acentos.
                 if (res.IndexOf("VEINTIDOS") != -1)
                 {
-                    res.Replace("VEINTIDOS", "VEINTIDÓS");
+                    res = res.Replace("VEINTIDOS", "VEINTIDÓS");
                 }
                 // Acentos.
                 if (res.IndexOf("VEINTITRES") != -1)
                 {
-                    res.Replace("VEINTITRES", "VEINTITRÉS");
+                    res = res.Replace("VEINTITRES", "VEINTITRÉS");
                 }
                 // Acentos.
                 if (res.IndexOf("VEINTISEIS") != -1)
                 {
-                    res.Replace("VEINTISEIS", "VEINTISÉIS");
+                    res = res.Replace("VEINTISEIS", "VEINTISÉIS");
                 }
 
                 return res;
