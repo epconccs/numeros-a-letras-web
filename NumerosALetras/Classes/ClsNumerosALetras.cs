@@ -43,6 +43,27 @@ namespace NumerosALetras.Classes
                 // Convertir parte entera y unirla con la parte decimal.
                 res = CovertirValor(Convert.ToDouble(entero)) + dec;
 
+                // Acentos.
+                if (res.IndexOf("DIECISEIS") != -1)
+                {
+                    res.Replace("DIECISEIS", "DIECISÉIS");
+                }
+                // Acentos.
+                if (res.IndexOf("VEINTIDOS") != -1)
+                {
+                    res.Replace("VEINTIDOS", "VEINTIDÓS");
+                }
+                // Acentos.
+                if (res.IndexOf("VEINTITRES") != -1)
+                {
+                    res.Replace("VEINTITRES", "VEINTITRÉS");
+                }
+                // Acentos.
+                if (res.IndexOf("VEINTISEIS") != -1)
+                {
+                    res.Replace("VEINTISEIS", "VEINTISÉIS");
+                }
+
                 return res;
             }
             catch
