@@ -1,0 +1,51 @@
+.logoNAL {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.NAL{
+  background: url("../images/pat_verde.png");
+}
+a.link {
+	color: #ffffff;
+}
+a.link:hover{
+	color: #308445;
+}
+input.txtNumero {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  line-height: 34px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+  padding: 5px 0;
+  border-radius: 0;
+  font-family:Ubuntu;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  color: #f37b7d;
+}
+input.txtNumeroFocus:focus {
+  border-bottom-color: #000;
+  outline: none;
+  color: #f37b7d;
+}
+label.lblLetras{
+    display: block;
+    font-family: Ubuntu;
+    font-size: 24px;
+    text-align:center;
+    color: #f37b7d;
+}
+
+
+/* Bootstrap Overrides */
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 0px solid #eee;*/
+}

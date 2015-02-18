@@ -1,0 +1,66 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  background-color: #83c998;
+  background-repeat: repeat;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 720px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 5px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: Ubuntu;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:right;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.top-buffer { margin-top:20px; }
+.vcenter {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+.renglonDelgado {
+  margin: 5px 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* iPhone, Android rules here */
+  .footer{
+    height: 115px;
+  }
+  body {
+    margin-bottom: 115px;
+  }
+}
