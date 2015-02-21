@@ -88,6 +88,11 @@
     <Content Include="Content\css\sticky-footer.css" />
     <Content Include="Content\favicon.ico" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\apple-touch-icon-114x114.png" />
+    <Content Include="Content\images\apple-touch-icon-144x144.png" />
+    <Content Include="Content\images\apple-touch-icon-72x72.png" />
+    <Content Include="Content\images\apple-touch-icon.png" />
+    <Content Include="Content\images\AppStore.png" />
     <Content Include="Content\images\LogoNalBco.png" />
     <Content Include="Content\images\pat_verde.png" />
     <Content Include="Content\js\bootstrap.js" />
