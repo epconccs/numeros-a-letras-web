@@ -6,14 +6,14 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 70px;
+  margin-bottom: 105px;
 }
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 70px;
+  height: 105px;
   background-color: #83c998;
   background-repeat: repeat;
 }
@@ -26,6 +26,17 @@ body {
   width: auto;
   max-width: 720px;
   padding: 0 15px;
+}
+.containerFooter {
+  width: 100%;
+  max-width: 7680px;
+  padding: 0 15px;
+}
+.containerFooter .text-muted {
+  margin: 5px 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: Ubuntu;
 }
 .container .text-muted {
   margin: 5px 0;
@@ -47,20 +58,14 @@ body {
 }
 .top-buffer { margin-top:20px; }
 .vcenter {
-    display: inline-block;
+    /*display: inline-block;*/
     vertical-align: top;
     float: none;
+    padding-bottom: 4px;
 }
 .renglonDelgado {
-  margin: 5px 0;
+  margin: 7px 0;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* iPhone, Android rules here */
-  .footer{
-    height: 115px;
-  }
-  body {
-    margin-bottom: 115px;
-  }
-}
+
+

@@ -1,0 +1,117 @@
+﻿@media only screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  /* iPhone, Android Smartphones */
+  .footer{
+    height: 180px;
+  }
+  body {
+    margin-bottom: 180px;
+  }
+}
+@media only screen and (min-device-width: 1441px) and (max-device-width: 2048px) {
+      input.txtNumero {
+      display: block;
+      width: 100%;
+      font-size: 34px;
+      line-height: 44px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+      padding: 5px 0;
+      border-radius: 0;
+      font-family:Ubuntu;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+      color: #f37b7d;
+    }
+    label.lblLetras {
+        display: block;
+        font-family: Ubuntu;
+        font-size: 34px;
+        text-align:center;
+        color: #f37b7d;
+    }
+    .logoNAL {
+      width: 35%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .container {
+      width: auto;
+      max-width: 920px;
+      padding: 0 15px;
+    }
+}
+@media only screen and (min-device-width: 2049px) and (max-device-width: 4096px) {
+      input.txtNumero {
+      display: block;
+      width: 100%;
+      font-size: 54px;
+      line-height: 64px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+      padding: 5px 0;
+      border-radius: 0;
+      font-family:Ubuntu;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+      color: #f37b7d;
+    }
+    label.lblLetras {
+        display: block;
+        font-family: Ubuntu;
+        font-size: 54px;
+        text-align:center;
+        color: #f37b7d;
+    }
+    .logoNAL {
+      width: 35%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .container {
+      width: auto;
+      max-width: 1320px;
+      padding: 0 15px;
+    }
+}
+@media only screen and (min-device-width: 4097px) and (max-device-width: 7680px) {
+      input.txtNumero {
+      display: block;
+      width: 100%;
+      font-size: 64px;
+      line-height: 74px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+      padding: 5px 0;
+      border-radius: 0;
+      font-family:Ubuntu;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
+      color: #f37b7d;
+    }
+    label.lblLetras {
+        display: block;
+        font-family: Ubuntu;
+        font-size: 64px;
+        text-align:center;
+        color: #f37b7d;
+    }
+    .logoNAL {
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .container {
+      width: auto;
+      max-width: 1520px;
+      padding: 0 15px;
+    }
+}

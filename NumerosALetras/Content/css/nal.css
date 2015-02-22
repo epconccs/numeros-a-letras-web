@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto; 
 }
-.NAL{
+.NAL {
   background: url("../images/pat_verde.png");
 }
 a.link {
@@ -34,14 +34,19 @@ input.txtNumeroFocus:focus {
   outline: none;
   color: #f37b7d;
 }
-label.lblLetras{
+label.lblLetras {
     display: block;
     font-family: Ubuntu;
     font-size: 24px;
     text-align:center;
     color: #f37b7d;
 }
-
+img.appstore {
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
 /* Bootstrap Overrides */
 .page-header {
@@ -49,3 +54,4 @@ label.lblLetras{
   margin: 40px 0 20px;
   border-bottom: 0px solid #eee;*/
 }
+
