@@ -29,7 +29,7 @@ namespace NumerosALetras.Classes
                 if (numero.Split('.')[0].Length > 16)
                 {
                     return "Número fuera de rango.";
-                }              
+                }
                 // Tratar de convertir cadena a número.
                 nro = Double.Parse(numero);
                 // Obtener la parte entera y decimal.
@@ -65,12 +65,16 @@ namespace NumerosALetras.Classes
                 }
 
                 // Excepción VEINTIÚN.
-                var index = res.IndexOf("VEINTIUNO");
-                if (index != -1)
+                var contador = res.Split(' ').ToList().Where(t => t == "VEINTIUNO").Count();
+                for (int i = 0; i < contador; i++)
                 {
-                    if (index != res.Count() - 9)
+                    var index = res.IndexOf("VEINTIUNO");
+                    if (index != -1)
                     {
-                        res = res.Replace("VEINTIUNO", "VEINTIÚN");
+                        if (index != res.Count() - 9)
+                        {
+                            res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
+                        }
                     }
                 }
 
@@ -153,6 +157,20 @@ namespace NumerosALetras.Classes
             }
             return resultado;
 
+        }
+
+        /// <summary>
+        /// Remplazar la primera ocurrencia en una cadena.
+        /// </summary>
+        /// <param name="cadena">Cadena original.</param>
+        /// <param name="encuentra">Cadena a reemplazar.</param>
+        /// <param name="reemplazo">Cadena de reemplazo.</param>
+        /// <returns></returns>
+        public static string Reemplazar(string cadena, string encuentra, string reemplazo)
+        {
+            int index = cadena.IndexOf(encuentra);
+            string resultado = cadena.Remove(index, encuentra.Length).Insert(index, reemplazo);
+            return resultado;
         }
 
     }
