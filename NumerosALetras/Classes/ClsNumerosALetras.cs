@@ -64,6 +64,16 @@ namespace NumerosALetras.Classes
                     res = res.Replace("VEINTISEIS", "VEINTISÉIS");
                 }
 
+                // Excepción VEINTIÚN.
+                var index = res.IndexOf("VEINTIUNO");
+                if (index != -1)
+                {
+                    if (index != res.Count() - 9)
+                    {
+                        res = res.Replace("VEINTIUNO", "VEINTIÚN");
+                    }
+                }
+
                 return res;
             }
             catch
